@@ -184,14 +184,17 @@ while on_off != 'off':
     if user_choice == "espresso":
         if user_coin_total > MENU["espresso"]["cost"]:
             user_refund = user_coin_total - MENU["espresso"]["cost"]
+            print(f"Your refund: ${round(user_refund, 2)}")
     elif user_choice == "latte":
         if user_coin_total > MENU["latte"]["cost"]:
             user_refund = user_coin_total - MENU["latte"]["cost"]
+            print(f"Your refund: ${round(user_refund, 2)}")
     elif user_choice == "cappuccino":
         if user_coin_total > MENU["cappuccino"]["cost"]:
             user_refund = user_coin_total - MENU["cappuccino"]["cost"]
+            print(f"Your refund: ${round(user_refund, 2)}")
 
-    print(f"Your refund: ${round(user_refund, 2)}")
+    # print(f"Your refund: ${round(user_refund, 2)}")
 
     if user_choice == 'report':
         CheckResources()
